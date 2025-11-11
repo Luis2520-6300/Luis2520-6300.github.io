@@ -123,7 +123,7 @@
     }
 
     ul li {
-      margin-bottom: 0.5rem;
+      margin-bottom: 0.7rem;
     }
 
     a.cv-link {
@@ -149,6 +149,8 @@
       color: #666;
     }
 
+    .content-section { display: none; }
+
     @media (max-width: 700px) {
       nav ul {
         flex-wrap: wrap;
@@ -173,79 +175,176 @@
     <div class="logo">Luis Enrique Fernández Machado</div>
     <ul>
       <li><a href="#home">Home</a></li>
-      <li><a href="#research-experience">Research</a></li>
       <li><a href="#education">Education</a></li>
+      <li><a href="#research-experience">Research Experience</a></li>
+      <li><a href="#publications">Publications and Preprints</a></li>
       <li><a href="#presentations">Presentations</a></li>
-      <li><a href="#cv">CV</a></li>
+      <li><a href="#teaching">Teaching and Service</a></li>
+      <li><a href="#honors">Honors and Grants</a></li>
+      <li><a href="#awards">Awards in Mathematics Competition</a></li>
+      <li><a href="#skills">Skills and Languages</a></li>
+      <li><a href="#cv">CV (PDF)</a></li>
     </ul>
   </nav>
 
-  <!-- HEADER -->
+  <!-- HEADER (unchanged) -->
   <header id="home">
     <h1>Luis Enrique Fernández Machado</h1>
-    <p>Ph.D. Student in Mathematics. </p>
+    <p>Ph.D. Student in Mathematics.</p>
   </header>
 
   <main>
-    <!-- INTRODUCTION -->
+    <!-- INTRODUCTION (unchanged) -->
     <div class="intro">
       <div class="intro-text">
         <p>
-         I am currently first year Ph.D. student in Mathematics in France, employed by the Centre national de la recherche scientifique (CNRS)
- and as a Marie Sklodowska Curie fellow co-funded by the European Commission through the Cofund MathPhdInFrance program. I work in the Institut Denis Poisson at the Université d'Orléans and in the CERMICS lab of the "École nationale des ponts et chaussées" (ENPC). 
-          
-          My research work is developed under the supervision of Romain Abraham, Professor at Université d'Orléans, and Jean-François Delmas, Professor at ENPC. Currently, my research focus is on the field of community detection in dense labeled random graphs with particular interest in the more general setting of the Labeled Stochastic Block Model (LSBM).
+          I am currently first year Ph.D. student in Mathematics in France, employed by the Centre national de la recherche scientifique (CNRS)
+          and as a Marie Sklodowska Curie fellow co-funded by the European Commission through the Cofund MathPhdInFrance program.
+          I work in the Institut Denis Poisson at the Université d'Orléans and in the CERMICS lab of the "École nationale des ponts et chaussées" (ENPC).
+          My research focus is on community detection in dense labeled random graphs, especially in the Labeled Stochastic Block Model (LSBM).
         </p>
         <div class="contact-info">
-          <p><strong>Labs:</strong> Institut Denis Poisson (Université d'Orléans) and CERMICS (ENPC). Most of the time you cand find me in CERCMIS, office B210.</p>
-          <p><strong>Email:</strong> luis-enrique.fernandez-machado@cnrs.fr , luis-enrique.fernandez-machado@enpc.fr (any of them it is ok to get in touch) .</p>
+          <p><strong>Labs:</strong> Institut Denis Poisson (Université d'Orléans) and CERMICS (ENPC). Usually at CERMICS, office B210.</p>
+          <p><strong>Email:</strong> luis-enrique.fernandez-machado@cnrs.fr , luis-enrique.fernandez-machado@enpc.fr</p>
           <p><strong>Office:</strong> Coriolis building, B210, Champs sur Marne.</p>
         </div>
       </div>
-
       <div class="intro-photo">
         <img src="image.png" alt="Profile photo">
       </div>
     </div>
 
-    <!-- RESEARCH EXPERIENCE -->
-    <section id="research-experience">
-      <h2>Research Experience</h2>
+    <!-- EDUCATION -->
+    <section id="education" class="content-section">
+      <h2>Education</h2>
       <ul>
-        <li><strong>[Year]</strong> — Research internship at [Institution], working on [topic]. Supervisor: [Name].</li>
-        <li><strong>[Year]</strong> — Research assistant at [Institution], project on [short description].</li>
+        <li><strong>Ph.D. in Mathematics</strong>, CNRS of Université d’Orléans and ENPC (October 2025–Present). Supervisors: Prof. Romain Abraham and Prof. Jean-François Delmas.</li>
+        <li><strong>Double Master’s degree in Mathematics and Computer Science (Math-Info Program)</strong>, Université Gustave Eiffel (Sept 2024–Sept 2025). GPA: <strong>17.5/20</strong>, Mention: “Très bien”.</li>
+        <li><strong>Bachelor’s Degree in Mathematics</strong>, University of Havana (2019–2024). GPA: <strong>4.93/5.00</strong>.</li>
+        <li><strong>Training</strong>: National Cuban Training Center for International Olympiads (2017–2018) and High School Institute for Exact Sciences (IPVCE) Vladimir Ilich Lenin, Havana.</li>
       </ul>
     </section>
 
-    <!-- EDUCATION -->
-    <section id="education">
-      <h2>Education</h2>
+    <!-- RESEARCH EXPERIENCE -->
+    <section id="research-experience" class="content-section">
+      <h2>Research Experience</h2>
       <ul>
-        <li><strong>Ph.D. in Mathematics</strong>, Université d'Orléans and ENPC, [2025–Present]</li>
-        <li><strong>M.Sc. in Mathematics and Computer Science (Math-Info program)</strong> at <strong>Université Gustave Eiffel</strong>: <strong>2024–2025</strong></li>
-        <li><strong>B.Sc. in Mathematics</strong> at <strong>University of Havana [2019–2024]</strong>.</li>
+        <li><strong>May–Aug 2025:</strong> Internship at <em>CERMICS</em>, ENPC. Studied fundamental limits for community recovery in Labeled Stochastic Block Models using information-theoretic methods (Rényi divergence and f-divergences). Supervisor: Prof. Jean-François Delmas.</li>
+        <li><strong>2023–2024:</strong> Project “Wavelets, frames, spectral techniques, PDEs, and scientific machine learning in image analysis”. Improved the Mean Shift algorithm via algebraic similarity structures. Supervisor: Prof. Ángela M. León Mecías.</li>
+        <li><strong>2024:</strong> B.Sc. Thesis “Quasi-loop structure for a new similarity index between images”. Supervisor: Prof. Ángela M. León Mecías.</li>
+        <li><strong>2023:</strong> “Study of a new model of regular random graphs” (Regular Stochastic Model by Superposition). Supervisors: Prof. Gerandy Brito and Prof. José Valdés Castro.</li>
+        <li><strong>2020–2021:</strong> “Study of sets of the form {(xᵃ−yᵇ−c), x,y ∈ ℤᵐ}”. Supervisor: Prof. Rita Roldán Inguanzo.</li>
+      </ul>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section id="publications" class="content-section">
+      <h2>Publications and Preprints</h2>
+      <ul>
+        <li>Fernández L. (2025). “Introduction and solution of the Problem of the reduced catalan.” <em>Ciencias Matemáticas</em>. <a href="https://revistas.uh.cu/rcm/article/view/9749" target="_blank">View article</a>.</li>
       </ul>
     </section>
 
     <!-- PRESENTATIONS -->
-    <section id="presentations">
+    <section id="presentations" class="content-section">
       <h2>Presentations</h2>
       <ul>
-        <li><strong>[Year]</strong> — “[Talk title]”, presented at [Conference/Workshop name], [Location].</li>
-        <li><strong>[Year]</strong> — “[Talk title]”, presented at [Event].</li>
+        <li><strong>2025:</strong> Master thesis defense – “Community detection in general stochastic block models”.</li>
+        <li><strong>2024:</strong> 16th International Conference on Operation Research – “Quasi-loop structure for a new similarity index between images.”</li>
+        <li><strong>2024:</strong> Bachelor’s thesis defense – “Quasi-loop structure for a new similarity index between images.”</li>
+        <li><strong>2023:</strong> CIMPA School – “New algebraic structure for the detection of similarity between images.”</li>
+        <li><strong>2023:</strong> MATCOM Scientific Symposium – “New algebraic structure for the detection of similarity between images.” (First Prize).</li>
+        <li><strong>2022:</strong> University of Havana Scientific Forum – “Reduced catalans, potentially complex and rebels.”</li>
+        <li><strong>2021:</strong> MATCOM Symposium – “Reduced catalans, potentially complex and rebels.” (Best Scientific Exposition Award & Silver Medal).</li>
+      </ul>
+    </section>
+
+    <!-- TEACHING -->
+    <section id="teaching" class="content-section">
+      <h2>Teaching and Service</h2>
+      <ul>
+        <li><strong>May–Aug 2024:</strong> Junior Professor, “Measurement and Integration Theory”, University of Havana.</li>
+        <li><strong>Jan–May 2024:</strong> Junior Professor, “Introduction to Mathematical Analysis”, University of Havana.</li>
+        <li><strong>Feb 2022–Feb 2023:</strong> Teaching Assistant, “Probability Theory”.</li>
+        <li><strong>Oct 2021–Feb 2022:</strong> Teaching Assistant, “Linear Algebra”.</li>
+        <li><strong>2019:</strong> Teacher in Number Theory for Cuban National Team for International Olympiads.</li>
+        <li>Contributions to problem banks for Central American and National Mathematics Olympiads.</li>
+      </ul>
+    </section>
+
+    <!-- HONORS -->
+    <section id="honors" class="content-section">
+      <h2>Honors and Grants</h2>
+      <ul>
+        <li><strong>2025:</strong> Recipient of the Ph.D. grant of the COFUND program MathPhDInFrance.</li>
+        <li><strong>2024:</strong> Participant in the 11th Heidelberg Laureate Forum.</li>
+        <li><strong>2024:</strong> Recipient of the Labex Bézout Scholarship.</li>
+        <li><strong>2024:</strong> Relevant Bachelor’s Thesis Award.</li>
+        <li><strong>2024:</strong> Bachelor’s Degree in Mathematics with Honors (Gold Degree).</li>
+        <li><strong>2024:</strong> Scientific Merit Award, Rector of the University of Havana.</li>
+        <li><strong>2024:</strong> Award for “Most Outstanding Student in the Academic Sphere”, Faculty of Mathematics and Computer Science.</li>
+      </ul>
+    </section>
+
+    <!-- AWARDS -->
+    <section id="awards" class="content-section">
+      <h2>Awards in Mathematics Competition</h2>
+      <ul>
+        <li><strong>2023:</strong> Bronze Medal – Ibero-American University Mathematics Olympiad.</li>
+        <li><strong>2023:</strong> Gold Medal – National Ranking, Ibero-American UMO.</li>
+        <li><strong>2023:</strong> First Prize – Functional Analysis Exam.</li>
+        <li><strong>2023:</strong> Gold Medal – National University Mathematics Olympiad Raimundo Reguera.</li>
+        <li><strong>2022:</strong> Third Prize – International Mathematics Competition (University College London).</li>
+        <li><strong>2022:</strong> Second Prize – Probability Theory Exam.</li>
+        <li><strong>2021:</strong> Gold Medal – National University Mathematics Olympiad.</li>
+        <li><strong>2021:</strong> Bronze Medal – Ibero-American UMO.</li>
+        <li><strong>2020:</strong> Perfect Gold Medal – Cuban National Mathematics Olympiad (Luis Campistrou).</li>
+        <li><strong>2019–2018:</strong> Multiple medals at Ibero-American, National, and Knowledge Competitions in Mathematics.</li>
+      </ul>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="content-section">
+      <h2>Skills and Languages</h2>
+      <ul>
+        <li>Programming in <strong>Python</strong> (matplotlib, numpy, random, pandas, scikit-learn).</li>
+        <li><strong>Spanish:</strong> Native language.</li>
+        <li><strong>English:</strong> Fluent.</li>
       </ul>
     </section>
 
     <!-- CV LINK -->
-    <section id="cv" style="text-align:center;">
-      <a class="cv-link" href="CV_YourName.pdf" target="_blank">📄 View Full CV (PDF)</a>
+    <section id="cv" class="content-section" style="text-align:center;">
+      <a class="cv-link" href="CV_LuisEnriqueFernandezMachado.pdf" target="_blank">📄 View Full CV (PDF)</a>
     </section>
-
   </main>
 
   <footer>
-    &copy; 2025 Your Name — All rights reserved.
+    &copy; 2025 Luis Enrique Fernández Machado — All rights reserved.
   </footer>
+
+  <!-- SCRIPT -->
+  <script>
+    const links = document.querySelectorAll('nav ul li a');
+    const sections = document.querySelectorAll('.content-section');
+    sections.forEach(sec => sec.style.display = 'none');
+    links.forEach(link => {
+      link.addEventListener('click', function(e) {
+        const target = this.getAttribute('href');
+        sections.forEach(sec => sec.style.display = 'none');
+        if (target !== '#home') {
+          e.preventDefault();
+          const section = document.querySelector(target);
+          if (section) {
+            section.style.display = 'block';
+            section.scrollIntoView({ behavior: 'smooth' });
+          }
+        } else {
+          window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
