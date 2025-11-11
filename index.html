@@ -1,1 +1,250 @@
-Hello World!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Your Name | Ph.D. Student in Mathematics</title>
+  <style>
+    /* GENERAL STYLE */
+    body {
+      font-family: "Helvetica Neue", Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+      color: #222;
+      background-color: #fafafa;
+      scroll-behavior: smooth;
+    }
+
+    /* NAVIGATION BAR */
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: #003366;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0.8rem 1.5rem;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1000;
+    }
+
+    nav .logo {
+      font-weight: bold;
+      font-size: 1.1rem;
+      letter-spacing: 0.5px;
+    }
+
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      gap: 1.2rem;
+    }
+
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #ffcc00;
+    }
+
+    header {
+      text-align: center;
+      background: #003366;
+      color: #fff;
+      padding: 5rem 1rem 2rem 1rem;
+      margin-top: 2.5rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.2rem;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .intro {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      justify-content: space-between;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 1.5rem;
+    }
+
+    .intro-text {
+      flex: 1 1 60%;
+    }
+
+    .intro-photo {
+      flex: 1 1 30%;
+      text-align: right;
+    }
+
+    .intro-photo img {
+      width: 150px;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 3px solid #003366;
+    }
+
+    .contact-info {
+      margin-top: 0.8rem;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    section {
+      margin-top: 2rem;
+    }
+
+    section h2 {
+      color: #003366;
+      border-bottom: 2px solid #003366;
+      padding-bottom: 0.3rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.5rem;
+    }
+
+    a.cv-link {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.8rem 1.5rem;
+      background: #ffcc00;
+      color: #003366;
+      font-weight: bold;
+      border-radius: 5px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    a.cv-link:hover {
+      background: #ffd633;
+    }
+
+    footer {
+      text-align: center;
+      margin: 3rem 0 1rem;
+      font-size: 0.85rem;
+      color: #666;
+    }
+
+    @media (max-width: 700px) {
+      nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+
+      .intro {
+        flex-direction: column;
+        text-align: center;
+      }
+      .intro-photo {
+        text-align: center;
+        margin-top: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <div class="logo">Your Name</div>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#research-experience">Research</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#presentations">Presentations</a></li>
+      <li><a href="#cv">CV</a></li>
+    </ul>
+  </nav>
+
+  <!-- HEADER -->
+  <header id="home">
+    <h1>Your Name</h1>
+    <p>Ph.D. Student in Mathematics, [University Name]</p>
+  </header>
+
+  <main>
+    <!-- INTRODUCTION -->
+    <div class="intro">
+      <div class="intro-text">
+        <p>
+          I am a Ph.D. student in Mathematics at <strong>[University Name]</strong> in France, working under the supervision of 
+          <strong>[Supervisor 1]</strong> and <strong>[Supervisor 2]</strong>. My research interests lie in [e.g. "probability theory, stochastic processes, and mathematical physics"].
+        </p>
+        <div class="contact-info">
+          <p><strong>Institution:</strong> [Department / Lab Name], [University Name]</p>
+          <p><strong>Email:</strong> [your.email@university.fr]</p>
+          <p><strong>Office:</strong> [Building, Room, City]</p>
+        </div>
+      </div>
+
+      <div class="intro-photo">
+        <img src="your-photo.jpg" alt="Profile photo">
+      </div>
+    </div>
+
+    <!-- RESEARCH EXPERIENCE -->
+    <section id="research-experience">
+      <h2>Research Experience</h2>
+      <ul>
+        <li><strong>[Year]</strong> — Research internship at [Institution], working on [topic]. Supervisor: [Name].</li>
+        <li><strong>[Year]</strong> — Research assistant at [Institution], project on [short description].</li>
+      </ul>
+    </section>
+
+    <!-- EDUCATION -->
+    <section id="education">
+      <h2>Education</h2>
+      <ul>
+        <li><strong>Ph.D. in Mathematics</strong>, [University Name], [Year–Present]</li>
+        <li><strong>M.Sc. in Mathematics</strong>, [University Name], [Year–Year]</li>
+        <li><strong>B.Sc. in Mathematics</strong>, [University Name], [Year–Year]</li>
+      </ul>
+    </section>
+
+    <!-- PRESENTATIONS -->
+    <section id="presentations">
+      <h2>Presentations</h2>
+      <ul>
+        <li><strong>[Year]</strong> — “[Talk title]”, presented at [Conference/Workshop name], [Location].</li>
+        <li><strong>[Year]</strong> — “[Talk title]”, presented at [Event].</li>
+      </ul>
+    </section>
+
+    <!-- CV LINK -->
+    <section id="cv" style="text-align:center;">
+      <a class="cv-link" href="CV_YourName.pdf" target="_blank">📄 View Full CV (PDF)</a>
+    </section>
+
+  </main>
+
+  <footer>
+    &copy; 2025 Your Name — All rights reserved.
+  </footer>
+
+</body>
+</html>
+
