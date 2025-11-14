@@ -116,17 +116,21 @@
   text-decoration: underline;
     }
 
-    .social-icons {
+   .social-icons {
   margin-top: 0.6rem;
   text-align: right;
+  display: flex;
+  flex-direction: column;   /* <-- logos uno debajo del otro */
+  align-items: flex-end;     /* <-- alineados a la derecha */
+  gap: 0.5rem;               /* <-- espacio entre los logos */
     }
 
 .social-icons img {
-  width: 28px;
-  height: 28px;
-  margin-left: 6px;
+  width: 48px;               /* <-- tamaño más grande */
+  height: 48px;
   cursor: pointer;
     }
+
 
 
 
