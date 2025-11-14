@@ -105,12 +105,30 @@
     @keyframes fadeIn{from{opacity:0; transform:translateY(6px)} to{opacity:1; transform:none}}
     footer{ text-align:center; margin:2rem 0 3rem; color:var(--muted); font-size:.88rem }
 
-    /* ...todo tu CSS... */
 
     pre {
         font-family: inherit;
         font-size: inherit;
     }
+
+    pre a {
+  color: #0645AD;      /* azul estándar */
+  text-decoration: underline;
+    }
+
+    .social-icons {
+  margin-top: 0.6rem;
+  text-align: right;
+    }
+
+.social-icons img {
+  width: 28px;
+  height: 28px;
+  margin-left: 6px;
+  cursor: pointer;
+    }
+
+
 
   </style>
 </head>
@@ -167,12 +185,12 @@
          
 
       <pre>
-       <strong>Emails:</strong>                    luis-enrique.fernandez-machado@cnrs.fr 
-                                        luis-enrique.fernandez-machado@enpc.fr 
+      <strong>Emails:</strong>                    <a href="mailto:luis-enrique.fernandez-machado@cnrs.fr">luis-enrique.fernandez-machado@cnrs.fr</a>
+                                        <a href="mailto:luis-enrique.fernandez-machado@enpc.fr">luis-enrique.fernandez-machado@enpc.fr</a>
                                         (any of them it is ok to get in touch)
       </pre>
 
-        
+ 
       <pre>
        <strong>Work location:</strong>        Most of the time you cand find me in CERMICS, Coriolis building, 
                                         office B210 (or in the library!), Champs sur Marne.</pre>
@@ -188,6 +206,16 @@
 
     <div class="intro-photo" id="introPhoto">
       <img src="image.png" alt="Profile photo">
+      <div class="social-icons">
+  <a href="https://www.researchgate.net/profile/TU-PERFIL" target="_blank">
+    <img src="researchgate.png" alt="ResearchGate">
+  </a>
+
+  <a href="https://orcid.org/TU-ORCID" target="_blank">
+    <img src="orcid.png" alt="ORCID">
+  </a>
+</div>
+
     </div>
   </div>
     
