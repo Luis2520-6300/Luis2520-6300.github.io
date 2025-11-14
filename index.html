@@ -69,6 +69,10 @@
     .intro-photo{flex:0 0 170px; text-align:right}
     .intro-photo img{width:150px; height:150px; object-fit:cover; border-radius:50%; border:3px solid var(--nav-bg); box-shadow:0 6px 20px rgba(2,10,22,.08)}
     .contact-info{margin-top:.7rem; font-size:.95rem; color:var(--muted)}
+    .contact-info pre:first-of-type {
+    margin-top: -0.3rem;
+    }
+
 
     /* center CV button in Home */
     .cv-home{display:block; margin:1.1rem auto 0; padding:.7rem 1rem; background:var(--accent); color:var(--nav-bg); font-weight:700; border-radius:6px; text-decoration:none; width:max-content}
@@ -82,7 +86,7 @@
     }
 
     /* preserve exact textual formatting from the PDF */
-    .pdf-text{white-space:pre-wrap; font-family:inherit; font-size:0.98rem; color:var(--text)}
+    .pdf-text{white-space:pre-wrap; font-family:arial; font-size:0.98rem; color:var(--text)}
     .pdf-list{margin:0; padding-left:1rem}
 
     /* hide sections initially */
@@ -155,6 +159,8 @@
       </div>
 
       <div class="contact-info">
+         
+
         <pre>
         <strong>Emails:</strong>            luis-enrique.fernandez-machado@cnrs.fr 
                            luis-enrique.fernandez-machado@enpc.fr 
@@ -370,13 +376,8 @@ Skills
       </section>
     </div>
 
-    <!-- right column: keep the Home photo visible on larger screens -->
-    <div class="right-col">
-      <div class="card" style="padding:1rem; text-align:center;">
-        <img src="image.png" alt="Profile photo" style="width:120px;height:120px;border-radius:50%;object-fit:cover;border:3px solid var(--nav-bg)">
-        <p class="muted" style="margin-top:.6rem;font-size:.95rem">Profile photo — kept visible while viewing sections</p>
-      </div>
-    </div>
+  
+
   </div>
 
   <footer>
