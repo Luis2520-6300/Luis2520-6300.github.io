@@ -211,7 +211,7 @@
 
     <div class="intro-photo" id="introPhoto">
       <img src="image.png" alt="Profile photo">
-      <div class="social-icons">
+      <div class="social-icons" id="socialIcons">
   <a href="https://www.researchgate.net/profile/TU-PERFIL" target="_blank">
     <img src="researchgate.png" alt="ResearchGate">
   </a>
@@ -422,6 +422,8 @@ Talk: Reduced catalans, potentially complex and rebels.
     const sections = document.querySelectorAll('.content-section');
     const introText = document.getElementById('introText');
     const introPhoto = document.getElementById('introPhoto');
+    const socialIcons = document.getElementById('socialIcons');
+
 
     // Initially: only Home visible (intro text visible, sections hidden)
     function hideAllSections(){
@@ -434,22 +436,22 @@ Talk: Reduced catalans, potentially complex and rebels.
       hideAllSections();
       const sec = document.querySelector(id);
       if(sec){
-        // show only this section
         sec.style.display = 'block';
         sec.classList.add('fade-in');
-        // hide the intro text block (but keep photo)
         introText.style.display = 'none';
-        // scroll into view nicely (account for fixed nav)
+        socialIcons.style.display = 'none'; // ocultar íconos en secciones distintas de Home
         window.scrollTo({ top: document.querySelector('nav').offsetHeight, behavior: 'smooth' });
-      }
     }
+   }
 
-    // Show Home: show intro text, hide sections
+    // Show Home: show intro text, show social icons
     function showHome(){
       hideAllSections();
       introText.style.display = 'block';
+      socialIcons.style.display = 'block'; // mostrar íconos solo en Home
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
+
 
     // wire links
     links.forEach(link=>{
